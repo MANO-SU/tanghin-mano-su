@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张三的个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-600 p-4 fixed w-full top-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">张三</h1>
+            <div class="space-x-6">
+                <a href="#about" class="text-white hover:text-blue-200">关于我</a>
+                <a href="#education" class="text-white hover:text-blue-200">教育背景</a>
+                <a href="#projects" class="text-white hover:text-blue-200">项目经历</a>
+                <a href="#contact" class="text-white hover:text-blue-200">联系方式</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto pt-20 px-4">
+        <section id="about" class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-600">个人简介</h2>
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/150" alt="头像" class="rounded-full w-32 h-32 mr-6">
+                <p class="text-gray-700 leading-relaxed">
+                    北京大学计算机科学专业在读本科生，主攻前端开发与人工智能方向。
+                    热爱编程与开源社区，获得2023年全国大学生程序设计竞赛金奖。
+                </p>
+            </div>
+        </section>
+
+        <section id="education" class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-600">教育经历</h2>
+            <div class="space-y-4">
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h3 class="text-xl font-semibold">北京大学</h3>
+                    <p class="text-gray-600">计算机科学与技术 | 2021-2025</p>
+                    <ul class="list-disc pl-6 mt-2 text-gray-700">
+                        <li>GPA: 3.8/4.0</li>
+                        <li>核心课程：数据结构、算法设计、机器学习</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-600">项目展示</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2">智能教学系统</h3>
+                    <p class="text-gray-600 mb-4">基于React和TensorFlow.js开发的个性化学习平台</p>
+                    <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm ml-2">AI</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-blue-600">联系我</h2>
+            <div class="space-y-2">
+                <p class="flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                    </svg>
+                    zhangsan@example.com
+                </p>
+                <p class="flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    北京市海淀区
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
